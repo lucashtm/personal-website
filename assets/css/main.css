@@ -1,0 +1,46 @@
+body {
+	margin: 0 28%;
+	color: #212024;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+header span {
+	color: #9d9ba2;
+}
+
+header p {
+	margin: 0;
+	color: #9d9ba2;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #212024;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+header .links {
+	position: fixed;
+	width: 100px;
+	height: auto;
+	top: 60px;
+	right: 28%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	font-size: 18px;
+	color: #9d9ba2;
+}
