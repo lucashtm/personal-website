@@ -1,16 +1,36 @@
+html { border-top: 2px solid #77679e; }
+
 body {
 	margin: 0 28%;
-	color: #212024;
+	color: #282338;
 	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+.site-title {
+	color: #282338;
 }
 
 header {
 	margin-top: 50px;
-	font-size: 30px;
+	font-size: 36px;
+	margin-bottom: 40px;
 }
 
-header span {
-	color: #9d9ba2;
+header .trail {
+	color: #77679e;
+	font-weight: bold;
 }
 
 header p {
@@ -20,27 +40,123 @@ header p {
 	font-size: 16px;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:visited {
-	color: #212024;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
 header .links {
-	position: fixed;
-	width: 100px;
-	height: auto;
-	top: 60px;
-	right: 28%;
+	margin-top: 10px;
+	border-top: 1px solid #e5e2ec;
+	border-bottom: 1px solid #e5e2ec;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: row;
 	font-size: 18px;
 	color: #9d9ba2;
+}
+
+header .links > a{
+	padding-right: 20px;
+	color: #9d9ba2;
+}
+
+
+.post-list {
+	margin: 0;
+	padding: 0;
+}
+
+.post-list * {
+	margin: 0;
+}
+
+.post-prev {
+	border-bottom: 1px solid #e5e2ec;
+	padding: 20px 0;
+}
+
+.prev-title {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.category-prev {
+	font-size: 16px;
+	background: #77679e;
+	border-radius: 6px 0 0 6px;
+	padding: 0 10px;
+	color: white;
+	padding-top: 5px;
+	margin-right: 20px;
+	transition: border 0.25s;
+	transition: background 0.25s;
+}
+
+.post-prev h2 {
+	color: #282338;
+}
+
+.post-prev .tags > span {
+	border: 1px solid #e5e2ec;
+	border-radius: 3px;
+	padding: 0 3px;
+	margin: 0 3px;
+	font-size: 12px;
+}
+
+.post-prev .date {
+	color: #9d9ba2;
+	font-size: 12px;
+}
+
+.post-prev .content {
+	border-left: 10px solid #e5e2ec;
+	padding-left: 10px;
+}
+
+.post * {
+	margin: 0;
+}
+
+.post-title {
+	font-size: 34px;
+}
+
+.subscription {
+	color: #9d9ba2;
+	font-size: 14px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e5e2ec;
+}
+
+.content {
+	margin-top: 15px;
+	font-family: 'PT Serif', serif;
+}
+
+.contact * {
+	margin: 0;
+}
+
+.contact h1 {
+}
+
+.category-link {
+	font-size: 16px;
+	background: #77679e;
+	border-radius: 5px;
+	padding: 0 10px;
+	padding-bottom: 2px;
+	margin: 0 6px;
+	color: white;
+	transition: background 0.25s;
+}
+
+.category-link:hover {
+	background-color: #c7bce2;
+}
+
+.categories-list {
+	margin-top: 20px;
+}
+
+.categories {
+	margin-top: 20px;
 }
