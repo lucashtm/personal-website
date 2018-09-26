@@ -18,7 +18,7 @@ title: Dev Blog
 email: lucashtm@id.uff.br
 description: >- # this means to ignore newlines until "baseurl:"
   Here I write about programming and being a potato.
-baseurl: ""
+baseurl: "/blog"
 url: "http://lucashtm.github.io"
 twitter_username: lucashtm
 github_username:  lucashtm
