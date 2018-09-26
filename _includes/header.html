@@ -3,9 +3,9 @@
   <p>{{ site.description }}</p>
 
   <div class="links">
-		<a href="/categories">Categories</a>
-		<a href="/tags">Tags</a>
-		<a href="/about">Bio</a>
-		<a href="/contact">Contact</a>
+		<a href="{{ site.baseurl | append: '/categories' }}">Categories</a>
+		<a href="{{ site.baseurl | append: '/tags' }}">Tags</a>
+		<a href="{{ site.baseurl | append: '/about' }}">Bio</a>
+		<a href="{{ site.baseurl | append: '/contact' }}">Contact</a>
   </div>
 </header>
