@@ -1,0 +1,17 @@
+{% if post %}
+  {% assign words = post.content | number_of_words %}
+
+  {% if words < 360 %}
+    {% assign minutesText='1 minute to read' %}
+  {% else %}
+    {% assign minutesText=words | divided_by:180 | append: ' minutes to read' %}
+  {% endif %}
+{% else %}
+  {% assign words = content | number_of_words %}
+  
+  {% if words < 360 %}
+    {% assign minutesText='1 minute to read' %}
+  {% else %}
+    {% assign minutesText=words | divided_by:180 | append: ' minutes to read' %}
+  {% endif %}
+{% endif %}

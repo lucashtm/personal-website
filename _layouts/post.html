@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-
+{% include time-to-read.html %}
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="subscription">
     <time>{{ page.date | date_to_string }}</time>
-    <span class="reading-time"> - 2 minutes to read</span>
+    <span class="reading-time"> - {{ minutesText }}</span>
   </div>
 
   <div class="content">{{ content }}</div>

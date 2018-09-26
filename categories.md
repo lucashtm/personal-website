@@ -3,6 +3,7 @@ layout: page
 title: Categories
 ---
 
+
 <h1 class="categories-title">Categories</h1>
 <div class="categories-list">
 	{% for category in site.categories %}
@@ -17,9 +18,10 @@ title: Categories
 		<h3>{{ category_name }}</h3>
 		<ul id="{{ category_name }}">
 			{% for post in site.categories[category_name] %}
+				{% include time-to-read.html %}
 				<li class="post-short">
 		      <a href="{{ site.baseurl | append: post.url }}"><h3>{{ post.title }}</h3></a>
-		      <p class="date">{{ post.date | date_to_string }} <span class="reading-time"> - 2 minutes to read</span></p>
+		      <p class="date">{{ post.date | date_to_string }} <span class="reading-time"> - {{ minutesText }}</span></p>
 		    </li>
 			{% endfor %}
 		</ul>

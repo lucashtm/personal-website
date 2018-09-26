@@ -17,9 +17,10 @@ title: Tags
 		<h3>{{ tag_name }}</h3>
 		<ul id="{{ tag_name }}">
 			{% for post in site.tags[tag_name] %}
+				{% include time-to-read.html %}
 				<li class="post-short">
 		      <a href="{{ site.baseurl | append: post.url }}"><h3>{{ post.title }}</h3></a>
-		      <p class="date">{{ post.date | date_to_string }} <span class="reading-time"> - 2 minutes to read</span></p>
+		      <p class="date">{{ post.date | date_to_string }} <span class="reading-time"> - {{ minutesText }}</span></p>
 		    </li>
 			{% endfor %}
 		</ul>
