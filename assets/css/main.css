@@ -149,14 +149,51 @@ header .links > a{
 	transition: background 0.25s;
 }
 
+.category-link-sm {
+	background: #77679e;
+	border-radius: 3px;
+	padding: 0 10px;
+	padding-bottom: 2px;
+	color: white;
+	transition: background 0.25s;
+}
+
 .category-link:hover {
 	background-color: #c7bce2;
 }
 
-.categories-list {
+.categories-list, .tags-list {
 	margin-top: 20px;
 }
 
-.categories {
+.categories, .tags-index {
 	margin-top: 20px;
+}
+
+.tag-link {
+	font-size: 16px;
+	border: 1px solid #e5e2ec;
+	border-radius: 5px;
+	padding: 0 10px;
+	padding-bottom: 2px;
+	margin: 0 6px;
+	color: #282338;
+	transition: background 0.25s;
+}
+
+.post-short {
+	margin: 0;
+	border-left: 10px solid #e5e2ec;
+	border-bottom: 1px solid #e5e2ec;
+	padding-left: 6px;
+}
+
+.post-short > a:visited, .post-short > a:link {
+	color: inherit;
+}
+
+.post-short > .date {
+	margin: 0;
+	color: #9d9ba2;
+	font-size: 12px;
 }

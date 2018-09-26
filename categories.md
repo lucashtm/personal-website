@@ -17,13 +17,8 @@ title: Categories
 		<h3>{{ category_name }}</h3>
 		<ul id="{{ category_name }}">
 			{% for post in site.categories[category_name] %}
-				<li class="post-prev">
-		      <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-		      <div class="tags">
-		        {% for tag in post.tags %}
-		          <span>{{ tag }}</span>
-		        {% endfor %}
-		      </div>
+				<li class="post-short">
+		      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
 		      <p class="date">{{ post.date | date_to_string }} <span class="reading-time"> - 2 minutes to read</span></p>
 		    </li>
 			{% endfor %}
