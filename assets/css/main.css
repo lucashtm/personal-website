@@ -197,3 +197,18 @@ header .links > a{
 	color: #9d9ba2;
 	font-size: 12px;
 }
+
+.site-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 100px;
+	border-top: 2px solid #77679e;
+	height: 100px;
+	width: 100%;
+}
+
+.site-footer * {
+	margin-right: 10px;
+	color: inherit;
+}
