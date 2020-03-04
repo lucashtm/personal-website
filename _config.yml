@@ -18,8 +18,8 @@ title: Programming Journey
 email: lucashtmonteiro@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here I present my journey on programming and technology.
-baseurl: "/personal-website"
-url: "http://lucashtm.github.io"
+baseurl: ""
+url: "http://lucashtm.com.br"
 twitter_username: lucashtm
 github_username:  lucashtm
 
